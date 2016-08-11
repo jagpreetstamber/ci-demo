@@ -15,7 +15,7 @@ echo 'Cloning artifacts from' $1 'branch'
 git clone -b $1 git@github.com:jagpreetstamber/MyArtifacts.git --depth 1
 
 echo 'Copying required artifacts'
-cp build/libs/ci-demo.war MyArtifacts/webapps/ROOT.war
+cp build/libs/*.war MyArtifacts/webapps/ROOT.war
 cp web.config MyArtifacts/web.config
 cp scripts/azure/.deployment MyArtifacts/.deployment
 cp scripts/azure/deploy.sh MyArtifacts/deploy.sh
