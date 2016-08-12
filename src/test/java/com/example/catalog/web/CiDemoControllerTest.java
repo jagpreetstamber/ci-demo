@@ -10,7 +10,7 @@ public class CiDemoControllerTest {
 
     @Test
     public void shouldReturnNameAppenedWithHello() throws Exception {
-        String expected = "Welcome Tom";
+        String expected = "Hello Tom";
         controller = new CiDemoController();
 
         String actual = controller.getName("Tom");
