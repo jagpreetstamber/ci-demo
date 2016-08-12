@@ -11,6 +11,6 @@ class CiDemoController {
 
     @RequestMapping(value = "/cidemo/{name}", method = GET)
     String getName(@PathVariable String name) {
-        return "Welcome " + name;
+        return "Hello " + name;
     }
 }
